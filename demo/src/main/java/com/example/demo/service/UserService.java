@@ -22,6 +22,8 @@ public class UserService extends BaseService<User> {
     private UserDao userDao;
 
     public List<User> getList(){
-        return userDao.sample();
+        return userDao.all();
     }
+
+
 }
